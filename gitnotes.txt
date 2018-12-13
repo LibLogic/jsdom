@@ -1,0 +1,44 @@
+  102  mkdir jsdom
+  103  cd jsdom
+  104  ls
+  105  git init
+  106  curl -LO https://github.com/iamshaunjp/JavaScript-DOM-Tutorial/archive/master.zip
+  107  rm master.zp
+  108  ls
+  109  rm master.zip
+  110  ls
+  111  curl -LO https://github.com/iamshaunjp/JavaScript-DOM-Tutorial/archive/master.zip
+  112  ls
+  113  unzip -j master.zip
+  114  ls
+  115  rm master.zip
+  116  ls
+  117  rm Javascript-DOM-Tutorial
+  118  rm JavaScript-DOM-Tutorial
+  119  ls
+  120  ls -la
+  121  git status
+  122  git add -A
+  123  git status
+  124  git commit -m "first commit"
+  125  git status
+  126  git checkout -b version1.0
+  127  curl -LO https://github.com/iamshaunjp/JavaScript-DOM-Tutorial/archive/lesson-1.zip
+  128  ls
+  129  unzip -j lesson-1.zip
+  130  la
+  131  rm lesson-1.zip
+  Git Notes
+  132  ls
+  133  git status
+  134  git add -A
+  135  git status
+  136  git commit -m "added index.html and styles.css"
+  137  git status
+  138  git log
+  139  ls
+  140  c9 index.html
+  141  c9 styles.css
+  142  git checkout -b version2.0
+  143  curl -LO https://github.com/iamshaunjp/JavaScript-DOM-Tutorial/archive/lesson-2.zip
+  144  history > gitnotes.txt
