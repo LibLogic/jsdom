@@ -1,13 +1,11 @@
-const banner = document.querySelector("#page-banner");
+const bookList = document.querySelector('#book-list')
 
-console.log('#page-banner node type is',banner.nodeType);
-console.log('#page-banner node name is',banner.nodeName);
+console.log('The parent node is',bookList.parentNode);
 
-console.log('#page-banner has child nodes',banner.hasChildNodes());
+console.log('The parent node is',bookList.parentElement.parentElement);
 
-const clonedBanner = banner.cloneNode();
-console.log(clonedBanner);
-// List of Node Types
-//www.w3schools.com/jsref/prop_node_nodetype.asp
+console.log(bookList.childNodes);
+
+console.log(bookList.children);
 
 //https://www.youtube.com/watch?v=FIORjGvT0kk&list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V&index=1
