@@ -1,10 +1,13 @@
-var books = document.querySelectorAll("#book-list li .name");
+const banner = document.querySelector("#page-banner");
 
-books.forEach(function(book){
-    book.textContent += " (book title)";
-})
+console.log('#page-banner node type is',banner.nodeType);
+console.log('#page-banner node name is',banner.nodeName);
 
-const bookList = document.querySelector("#book-list");
-bookList.innerHTML += '<p>This is how you add HTML</p>';
+console.log('#page-banner has child nodes',banner.hasChildNodes());
+
+const clonedBanner = banner.cloneNode();
+console.log(clonedBanner);
+// List of Node Types
+//www.w3schools.com/jsref/prop_node_nodetype.asp
 
 //https://www.youtube.com/watch?v=FIORjGvT0kk&list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V&index=1
