@@ -1,11 +1,18 @@
-const bookList = document.querySelector('#book-list')
+const btns = document.querySelectorAll('#book-list .delete');
 
-console.log('The next sibling is"', bookList.nextSibling);
-console.log('The next sibling is"', bookList.nextElementSibling);
+btns.forEach(function(btn){
+    btn.addEventListener('click', function(e){
+        const li = e.target.parentElement;
+        li.parentNode.removeChild(li)
+    })
+})
 
-console.log('The previous sibling is"', bookList.previousSibling);
-console.log('The previous sibling is"', bookList.previousElementSibling);
+var link = document.querySelector('#page-banner a');
 
-bookList.previousElementSibling.querySelector('p').innerHTML += '<br>Too cool for everyone else!';
+link.addEventListener('click', function(e){
+    e.preventDefault();
+    console.log('Navigation to',e.target.textContent,'was prevented');
+    
+})
 
 //https://www.youtube.com/watch?v=FIORjGvT0kk&list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V&index=1
